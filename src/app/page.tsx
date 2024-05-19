@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col min-w-screen w-screen overflow-x-hidden">
       <Header />
       <JobTitle />
-      {/* <CreativeJourney /> */}
+      <CreativeJourney />
       {/* <SelectedWork /> */}
       {/* <MyClients /> */}
     </main>

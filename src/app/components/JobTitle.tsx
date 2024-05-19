@@ -3,7 +3,7 @@ import React from "react";
 const JobTitle = () => {
   return (
     <div className="w-full flex justify-center items-center px-5 lg:px-[8rem] flex-col space-y-10 py-10">
-      <div className="flex flex-col bg-[#C4C4C4] rounded-[32px] py-5 w-full justify-center items-center px-5 lg:px-[5rem] relative">
+      <div className="flex flex-col bg-[#C4C4C4] rounded-[32px] py-3 lg:py-5 w-full justify-center items-center px-5 lg:px-[5rem] relative">
         {/* absolute dot */}
         <div className="w-[14.5px] lg:w-[50px] h-[14.5px] lg:h-[50px] bg-black rounded-[50%] absolute bottom-10 left-10"></div>
         <div className="w-[14.5px] lg:w-[50px] h-[14.5px] lg:h-[50px] bg-black rounded-[50%] absolute top-10 right-10"></div>
