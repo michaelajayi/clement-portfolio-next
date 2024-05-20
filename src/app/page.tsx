@@ -10,8 +10,8 @@ export default function Home() {
     <main className='flex flex-col min-w-screen w-screen overflow-x-hidden'>
       <Header />
       <JobTitle />
-      <Experience />
       <CreativeJourney />
+      <Experience />
       <SelectedWork />
       <MyClients />
     </main>

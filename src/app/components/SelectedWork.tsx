@@ -164,7 +164,7 @@ const SelectedWork = () => {
               {showMobileVideo && activeWork?.title === work.title && (
                 <Link
                   href={work.link}
-                  className='pointer-events-none w-fit h-fit rounded-[16px] bg-[#C4C4C4] flex justify-center items-center z-50 shadow-lg lg:hidden'
+                  className='pointer-events-none w-fit h-fit rounded-[16px] bg-[#C4C4C4] flex justify-center items-center z-50 shadow-lg lg:hidden transition-all duration-500'
                   target='_blank'
                 >
                   <video
@@ -172,7 +172,7 @@ const SelectedWork = () => {
                     loop
                     muted
                     playsInline
-                    className='w-full h-full object-cover rounded-[16px]'
+                    className='w-full h-full object-cover rounded-[16px] transition-all duration-500'
                   >
                     <source src={videoSrc} type='video/mp4' />
                   </video>

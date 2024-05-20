@@ -74,7 +74,7 @@ const Header = () => {
               href={link.link}
               target="_blank"
               rel="noreferrer"
-              className="font-roboto text-white text-[28.387px] lg:text-[40.185px] lg:leading-[40.185px] leading-[28.387px] uppercase hover:leading-[55px] hover:text-[55px] hover:underline transition-all"
+              className="font-roboto text-white text-[28.387px] lg:text-[40.185px] lg:leading-[40.185px] leading-[28.387px] uppercase hover:leading-[55px] hover:text-[55px] underline lg:no-underline hover:underline transition-all"
             >
               {link.title}
             </a>

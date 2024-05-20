@@ -9,16 +9,20 @@ import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
 
+import { useMediaQuery } from "react-responsive";
+
 import { ClientType } from "@/utils/d.types";
 import ClientItem from "./ClientItem";
 
 import { clients } from "@/utils/clients";
 
 const ClientsSwiper = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
   return (
     <div className='w-full'>
       <Swiper
-        freeMode={true}
+        freeMode={isMobile ? false : true}
         grabCursor={true}
         loop={true}
         navigation={{
@@ -39,12 +43,12 @@ const ClientsSwiper = () => {
         className='my-clients-swiper w-full'
         breakpoints={{
           320: {
-            slidesPerView: 1.5,
-            spaceBetween: 100,
+            slidesPerView: 1,
+            spaceBetween: 25,
           },
           768: {
-            slidesPerView: 1.5,
-            spaceBetween: 100,
+            slidesPerView: 1,
+            spaceBetween: 25,
           },
           1024: {
             slidesPerView: 1.5,

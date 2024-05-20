@@ -13,7 +13,7 @@ const MyClients = () => {
           </p>
         </div>
 
-        <div className='w-full px-5 lg:px-[8rem]'>
+        <div className='w-full px-0 lg:px-[8rem]'>
           <ClientsSwiper />
         </div>
       </div>
