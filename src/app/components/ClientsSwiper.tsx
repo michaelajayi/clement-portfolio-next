@@ -16,7 +16,7 @@ import { clients } from "@/utils/clients";
 
 const ClientsSwiper = () => {
   return (
-    <div className="w-full">
+    <div className='w-full'>
       <Swiper
         freeMode={true}
         grabCursor={true}
@@ -35,15 +35,16 @@ const ClientsSwiper = () => {
           delay: 3000,
           pauseOnMouseEnter: true,
         }}
-        effect="fade"
-        className="my-clients-swiper w-full"
+        effect='fade'
+        className='my-clients-swiper w-full'
         breakpoints={{
           320: {
-            slidesPerView: 1,
+            slidesPerView: 1.5,
+            spaceBetween: 100,
           },
           768: {
-            slidesPerView: 1,
-            spaceBetween: 150,
+            slidesPerView: 1.5,
+            spaceBetween: 100,
           },
           1024: {
             slidesPerView: 1.5,

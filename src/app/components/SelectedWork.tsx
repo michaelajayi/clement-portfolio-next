@@ -4,6 +4,8 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { useMediaQuery } from "react-responsive";
+
 gsap.registerPlugin(ScrollTrigger);
 
 import Link from "next/link";
@@ -33,6 +35,11 @@ const SelectedWork = () => {
       link: "https://bridgingspace.co",
     },
   ];
+
+  const [showMobileVideo, setShowMobileVideo] = useState(false);
+  const [activeWork, setActiveWork] = useState<null | any>(null);
+
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   const videoSrc = "/videos/designer.mp4";
   const [itemsRef, setItemsRef] = useState<
@@ -87,37 +94,58 @@ const SelectedWork = () => {
 
   return (
     <div
-      className="w-full h-auto bg-black flex justify-center items-center py-[10rem]"
-      id="selectedWorks"
+      className='w-full h-auto bg-black flex justify-center items-center py-10 lg:py-[10rem]'
+      id='selectedWorks'
     >
-      <div className="w-full h-auto px-[8rem] flex flex-col space-y-[12rem]">
-        <p className="font-staatliches text-white text-[165px] leading-[144px]">
+      <div className='w-full h-auto px-5 lg:px-[8rem] flex flex-col space-y-10 lg:space-y-[12rem]'>
+        <p className='font-staatliches text-white text-[54px] lg:text-[165px] leading-[144px]'>
           Selected Works
         </p>
-        <div className="flex flex-col space-y-20">
+        <div className='flex flex-col space-y-10'>
           {selectedWorks.map((work, index) => (
             <div
-              className="group flex justify-between border-b-[2px] border-[#D9D9D9] border-opacity-[.70] relative"
+              className='group flex flex-col lg:flex-row space-y-5 lg:space-y-0 justify-between border-b-[2px] border-[#D9D9D9] border-opacity-[.70] relative py-5'
               key={index}
-              onMouseEnter={() => handleHover(index, true)}
-              onMouseLeave={() => handleHover(index, false)}
+              onMouseEnter={() => {
+                if (!("ontouchstart" in window) && window.innerWidth > 768) {
+                  handleHover(index, true);
+                }
+              }}
+              onMouseLeave={() => {
+                if (!("ontouchstart" in window) && window.innerWidth > 768) {
+                  handleHover(index, false);
+                }
+              }}
               ref={itemsRef[index].divRef}
             >
-              <div className="flex space-x-5 items-start cursor-pointer">
-                <p className="font-staatliches text-white text-opacity-[.60] group-hover:text-opacity-[1] text-[40px] leading-[115%]">
+              <div className='flex space-x-5 items-start cursor-pointer'>
+                <p className='font-staatliches text-white text-opacity-[.60] group-hover:text-opacity-[1] text-[15.125px] lg:text-[40px] leading-[115%]'>
                   {work.number}
                 </p>
-                <Link
-                  href={work.link}
-                  className="font-staatliches text-white text-opacity-[.60] group-hover:text-opacity-[1] text-[128px] leading-normal"
-                  target="_blank"
-                >
-                  {work.title}
-                </Link>
+
+                {isMobile ? (
+                  <div
+                    className='font-staatliches text-white text-opacity-[.60] group-hover:text-opacity-[1] text-[48.399px] lg:text-[128px] leading-normal'
+                    onClick={() => {
+                      setActiveWork(work);
+                      setShowMobileVideo(!showMobileVideo);
+                    }}
+                  >
+                    {work.title}
+                  </div>
+                ) : (
+                  <Link
+                    href={work.link}
+                    className='font-staatliches text-white text-opacity-[.60] group-hover:text-opacity-[1] text-[48.399px] lg:text-[128px] leading-normal'
+                    target='_blank'
+                  >
+                    {work.title}
+                  </Link>
+                )}
               </div>
 
               <div
-                className="video-container absolute pointer-events-none bg-red-00 right-0 top-0 w-[301px] h-[301px] rounded-[32px] bg-[#C4C4C4] flex justify-center items-center transform rotate-[-18.684deg] z-50 shadow-lg opacity-0"
+                className='video-container absolute pointer-events-none right-0 top-0 w-[301px] h-[301px] rounded-[32px] bg-[#C4C4C4] flex justify-center items-center transform rotate-[-18.684deg] z-50 shadow-lg opacity-0'
                 ref={itemsRef[index].videoContainerRef}
               >
                 <video
@@ -126,11 +154,30 @@ const SelectedWork = () => {
                   loop
                   muted
                   playsInline
-                  className="w-full h-full object-cover rounded-[32px]"
+                  className='w-full h-full object-cover rounded-[32px]'
                 >
-                  <source src={videoSrc} type="video/mp4" />
+                  <source src={videoSrc} type='video/mp4' />
                 </video>
               </div>
+
+              {/* video for mobile only */}
+              {showMobileVideo && activeWork?.title === work.title && (
+                <Link
+                  href={work.link}
+                  className='pointer-events-none w-fit h-fit rounded-[16px] bg-[#C4C4C4] flex justify-center items-center z-50 shadow-lg lg:hidden'
+                  target='_blank'
+                >
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className='w-full h-full object-cover rounded-[16px]'
+                  >
+                    <source src={videoSrc} type='video/mp4' />
+                  </video>
+                </Link>
+              )}
             </div>
           ))}
         </div>
