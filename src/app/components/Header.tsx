@@ -38,16 +38,16 @@ const Header = () => {
 
   const portfolioLinks = [
     {
-      title: "Linkedin",
-      link: "https://www.linkedin.com/in/clement-mendie/",
+      title: "E-mail",
+      link: "mailto:cstaphen@gmail.com",
     },
     {
-      title: "Email",
-      link: "mailto:clement@gmail.com",
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/mendieclement/",
     },
     {
       title: "Behance",
-      link: "https://www.behance.net/clementmendie",
+      link: "https://www.behance.net/mendieclement",
     },
   ];
 

@@ -6,15 +6,15 @@ const Footer = () => {
   const footerLinks = [
     {
       title: "E-mail",
-      link: "clement@gmail.com",
+      link: "mailto:cstaphen@gmail.com",
     },
     {
       title: "LinkedIn",
-      link: "https://linkedin.com/in/clement-stephen",
+      link: "https://www.linkedin.com/in/mendieclement/",
     },
     {
       title: "Behance",
-      link: "https://behance.com/clement-stephen",
+      link: "https://www.behance.net/mendieclement",
     },
   ];
   return (
