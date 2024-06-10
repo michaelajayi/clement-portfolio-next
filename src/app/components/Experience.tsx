@@ -59,9 +59,12 @@ const Experience = () => {
         </div>
 
         <div className='flex space-x-3 items-center lg:absolute right-10 bottom-0 cursor-pointer'>
-          <button className='font-staatliches text-[27.76px] lg:text-[40px] leading-[155%] text-white'>
+          <a
+            href='https://drive.google.com/file/d/1tpvzdyDd2j-lpZblqO-fCJEYH4URXyIe/view?usp=sharing' target="_blank"
+            className='font-staatliches text-[27.76px] lg:text-[40px] leading-[155%] text-white'
+          >
             Download Resume
-          </button>
+          </a>
           <Image src={rightArrow} alt='right arrow' />
         </div>
       </div>
