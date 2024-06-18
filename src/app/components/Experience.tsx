@@ -3,6 +3,8 @@
 import Image from "next/image";
 import rightArrow from "../../../public/icons/right-arrow.svg";
 import motopay from "../../../public/images/motopay-logo.svg";
+import sujimoto from '../../../public/icons/sujimoto.png';
+import bridgingSpace from '../../../public/icons/bridging-space.svg';
 
 const Experience = () => {
   const experience = [
@@ -16,13 +18,13 @@ const Experience = () => {
       title: "Product Lead",
       company: "Sujimoto Group",
       period: "2023 - Present",
-      logo: motopay,
+      logo: sujimoto,
     },
     {
       title: "Chief Product Officer",
       company: "Bridingspace",
       period: "2022 - Present",
-      logo: motopay,
+      logo: bridgingSpace,
     },
   ];
 
@@ -49,6 +51,8 @@ const Experience = () => {
               <Image
                 src={exp.logo}
                 alt='company logo'
+                height={50}
+                width={100}
                 className='hidden lg:group-hover:block'
               />
               <p className='font-roboto text-white text-opacity-[.70] text-[15.138px] lg:text-[24px] leading-[155%] group-hover:text-opacity-100'>
