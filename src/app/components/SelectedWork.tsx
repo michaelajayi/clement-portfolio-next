@@ -18,21 +18,28 @@ const SelectedWork = () => {
       number: "01",
       title: "Motopay",
       link: "https://motopayng.com",
+      videoSrc: "/videos/designer.mp4",
     },
     {
       number: "02",
       title: "Don Álvaro Wine",
       link: "https://dwellar.com",
+      videoSrc:
+        "https://res.cloudinary.com/do6zhtnvt/video/upload/v1716196394/Don_Alvaro_Wine_gwcuuk.mov",
     },
     {
       number: "03",
       title: "Leonardo",
       link: "https://leonardobysujimoto.com",
+      videoSrc:
+        "https://res.cloudinary.com/do6zhtnvt/video/upload/v1716199529/Leonadooo_pn4rdj.mov",
     },
     {
       number: "04",
       title: "BridgingSpace",
       link: "https://bridgingspace.co",
+      videoSrc:
+        "https://res.cloudinary.com/do6zhtnvt/video/upload/v1716196343/bridgingspace_i8y2h1.mov",
     },
   ];
 
@@ -41,7 +48,7 @@ const SelectedWork = () => {
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
-  const videoSrc = "/videos/designer.mp4";
+  // const videoSrc = "/videos/designer.mp4";
   const [itemsRef, setItemsRef] = useState<
     {
       divRef: React.RefObject<HTMLDivElement>;
@@ -156,7 +163,7 @@ const SelectedWork = () => {
                   playsInline
                   className='w-full h-full object-cover rounded-[32px]'
                 >
-                  <source src={videoSrc} type='video/mp4' />
+                  <source src={work.videoSrc} type='video/mp4' />
                 </video>
               </div>
 
@@ -174,7 +181,7 @@ const SelectedWork = () => {
                     playsInline
                     className='w-full h-full object-cover rounded-[16px] transition-all duration-500'
                   >
-                    <source src={videoSrc} type='video/mp4' />
+                    <source src={activeWork.videoSrc} type='video/mp4' />
                   </video>
                 </Link>
               )}

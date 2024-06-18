@@ -5,7 +5,7 @@ import centerImage from "../../../public/images/creative-journey-main-picture.sv
 
 const CreativeJourney = () => {
   return (
-    <div className='w-full flex justify-center items-center px-5 lg:px-[8rem] flex-col space-y-5 lg:space-y-10 py-10 pt-20'>
+    <div className='w-full flex justify-center items-center px-5 lg:px-[8rem] flex-col space-y-5 lg:space-y-10 py-10 pt-20' id='aboutMe'>
       <div className='w-full h-auto flex flex-col justify-end items-center relative space-y-10 lg:space-y-20'>
         <div className='grid grid-cols-1 lg:grid-cols-10 justify-items-end gap-8 items-center relative'>
           <p className='font-staatliches text-white text-[96px] lg:text-[165px] leading-[92.041px] lg:leading-[145px] absolute left-0 top-0 translate-y-[-30%] lg:translate-y-1/3 lg:w-1/3 w-full'>
