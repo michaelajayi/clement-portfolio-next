@@ -18,7 +18,8 @@ const SelectedWork = () => {
       number: "01",
       title: "Motopay",
       link: "https://motopayng.com",
-      videoSrc: "/videos/designer.mp4",
+      videoSrc:
+        "https://res.cloudinary.com/do6zhtnvt/video/upload/v1718715641/Screen_Recording_2024-06-18_at_13.40.17_buyizo.mov",
     },
     {
       number: "02",
@@ -152,7 +153,7 @@ const SelectedWork = () => {
               </div>
 
               <div
-                className='video-container absolute pointer-events-none right-0 top-0 w-[301px] h-[301px] rounded-[32px] bg-[#C4C4C4] flex justify-center items-center transform rotate-[-18.684deg] z-50 shadow-lg opacity-0'
+                className='video-container absolute pointer-events-none right-0 top-0 w-[401px] h-[301px] rounded-[32px] bg-[#C4C4C4] flex justify-center items-center transform rotate-[-18.684deg] z-50 shadow-lg opacity-0'
                 ref={itemsRef[index].videoContainerRef}
               >
                 <video

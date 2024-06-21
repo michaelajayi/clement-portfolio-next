@@ -22,7 +22,7 @@ const ClientsSwiper = () => {
   return (
     <div className='w-full'>
       <Swiper
-        freeMode={isMobile ? false : true}
+        // freeMode={isMobile ? false : true}
         grabCursor={true}
         loop={true}
         navigation={{
