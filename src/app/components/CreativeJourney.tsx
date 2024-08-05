@@ -20,7 +20,7 @@ const CreativeJourney = () => {
             <div className='flex flex-row lg:flex-col lg:space-y-5'>
               <div className='flex space-x-5 items-center'>
                 <p className='font-staatliches text-white text-[54px] lg:text-[96px] leading-[115%]'>
-                  4
+                  6
                 </p>
                 <p className='font-roboto text-white text-[16px] lg:text-[24px] leading-[155%] text-opacity-[.70] w-1/3'>
                   Years Experience
