@@ -32,7 +32,7 @@ const Experience = () => {
     <div className='w-full h-auto bg-black flex flex-col lg:flex-row justify-center items-start lg:items-center py-10 lg:py-[10rem] space-y-10'>
       <div className='w-full h-auto px-5 lg:px-[8rem] flex flex-col space-y-5 lg:space-y-[12rem] relative'>
         <p className='font-staatliches text-white text-[54px] lg:text-[165px] leading-[144px]'>
-          Experience
+         Recent Experience
         </p>
         <div className='flex flex-col space-y-10 lg:space-y-20 w-full lg:w-[80%]'>
           {experience.map((exp, index) => (
