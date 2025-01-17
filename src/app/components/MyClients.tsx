@@ -9,7 +9,7 @@ const MyClients = () => {
       <div className='flex flex-col space-y-10 lg:space-y-20 w-full justify-center relative'>
         <div className='w-full px-5 lg:px-[8rem]'>
           <p className='font-staatliches text-white text-[54px] lg:text-[165px] leading-normal lg:leading-[145px]'>
-            My Clients
+            Feedbacks
           </p>
         </div>
 
