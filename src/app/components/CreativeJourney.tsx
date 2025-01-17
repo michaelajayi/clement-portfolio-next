@@ -36,16 +36,16 @@ const CreativeJourney = () => {
               </div>
             </div>
             <p className='font-staatliches text-white text-[24px] lg:text-[40px] leading-[115%] w-[75%] lg:w-full'>
-              My creative journey started in calabar where I studied for the
+              My creative journey started in calabar where I studied for 4
               years.
             </p>
           </div>
         </div>
 
         <p className='font-roboto text-white text-opacity-[.70] text-[16px] lg:text-[24px] leading-normal lg:leading-[155%] w-full lg:w-[50%] self-start'>
-          I’ve been lucky to work with talented people and unique brands.
-          Currently, I’m leading the product design team at Motopay. My approach
-          is to focus on seamless functionality and memorable user interactions.
+         I’ve had the privilege of collaborating with talented individuals and remarkable brands. 
+          Currently, I lead the product design team at Motopay, 
+          where I’m dedicated to creating seamless functionality and crafting memorable user experiences that leave a lasting impact.
         </p>
       </div>
     </div>
