@@ -10,7 +10,7 @@ const Footer = () => {
     },
     {
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/mendieclement/",
+      link: "https://www.linkedin.com/in/clement-stephen-mendie/",
     },
     {
       title: "Behance",
