@@ -1,4 +1,4 @@
-import React from "react";
+Import React from "react";
 
 const JobTitle = () => {
   return (
@@ -15,9 +15,9 @@ const JobTitle = () => {
         </p>
       </div>
       <p className="text-white text-opacity-[.70] text-[14px] lg:text-[24px] font-roboto leading-[155%]">
-        My approach is to visualise and communicate the best of the product. I
-        pride myself as a problem solver, a storyteller and a bridge between
-        ideas and reality. My resilience shines through my ability to adapt to
+        My approach is to visualize and communicate the product's best, drive innovation, empower teams,
+        and champion user-centric solutions to deliver impactful and meaningful experiences.
+        My resilience shines through in my ability to adapt to
         changing circumstances, pivot when needed, and continuously push the
         boundaries of creativity.
       </p>
