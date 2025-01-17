@@ -1,4 +1,4 @@
-Import React from "react";
+thImport React from "react";
 
 const JobTitle = () => {
   return (
@@ -8,11 +8,11 @@ const JobTitle = () => {
         <div className="w-[14.5px] lg:w-[50px] h-[14.5px] lg:h-[50px] bg-black rounded-[50%] absolute bottom-5 lg:bottom-10 left-5 lg:left-10"></div>
         <div className="w-[14.5px] lg:w-[50px] h-[14.5px] lg:h-[50px] bg-black rounded-[50%] absolute top-5 lg:top-10 right-5 lg:right-10"></div>
         <p className="font-staatliches text-[27.755px] lg:text-[96px] text-black lg:leading-[96px] leading-normal self-start">
-          {"// a product designer //"}
+          {"// Everything Products //"}
         </p>
-        <p className="font-staatliches text-[27.755px] lg:text-[96px] text-black leading-normal lg:leading-[96px] self-end">
+       {/* <p className="font-staatliches text-[27.755px] lg:text-[96px] text-black leading-normal lg:leading-[96px] self-end">
           {"// a product manager //"}
-        </p>
+        </p>*/}
       </div>
       <p className="text-white text-opacity-[.70] text-[14px] lg:text-[24px] font-roboto leading-[155%]">
         My approach is to visualize and communicate the product's best, drive innovation, empower teams,
